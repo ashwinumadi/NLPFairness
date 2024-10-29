@@ -5,7 +5,7 @@
 #SBATCH --time=24:00:00
 #SBATCH --partition=ami100
 #SBATCH --gres=gpu:1
-#SBATCH --output=llama31_alpine-%j.out
+#SBATCH --output=llama31_ami100-%j.out
 #SBATCH --mail-type="ALL"
 #SBATCH --mail-user="asum8093@colorado.edu"
 
@@ -17,6 +17,7 @@ cd /scratch/alpine/asum8093/NLPFairness
 conda activate py38-pt1131-cuda117
 
 pip install bitsandbytes==0.43.0
+pip install accelerate
 
 echo "== This is the scripting step! =="
 

@@ -17,7 +17,7 @@ cd /scratch/alpine/asum8093/NLPFairness
 conda activate py38-pt1131-cuda117
 
 pip install bitsandbytes==0.43.0
-
+pip install accelerate
 echo "== This is the scripting step! =="
 
 python llama31.py
