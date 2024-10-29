@@ -4,7 +4,7 @@ from huggingface_hub import login
 from sklearn.metrics import precision_score, recall_score, f1_score
 
 # Log in programmatically
-my_secret_key = "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"
+my_secret_key = ""
 login(token=my_secret_key)
 
 with open("list_of_lists_file.txt", "r") as file:
