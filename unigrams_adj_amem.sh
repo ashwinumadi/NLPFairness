@@ -3,8 +3,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=48
 #SBATCH --time=24:00:00
-#SBATCH --partition=amem
-#SBATCH --output=unigrams_adj_amem-%j.out
+#SBATCH --partition=amilan
+#SBATCH --output=unigrams_adj_amilan-%j.out
 #SBATCH --mail-type="ALL"
 #SBATCH --mail-user="asum8093@colorado.edu"
 

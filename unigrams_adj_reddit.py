@@ -59,7 +59,7 @@ with open('/content/depression_dataset_reddit_cleaned.csv', 'r') as file:
                 unigram_embedding = get_unigram_embedding_in_context(sentence, unigram)
                 unigram_embeddings[unigram].append(unigram_embedding)
         c+=1
-        if c == 1000:
+        if c == 500:
             break
 
 
