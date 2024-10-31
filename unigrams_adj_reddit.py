@@ -46,6 +46,7 @@ unigram_counts = Counter()
 # Replace 'your_file.csv' with your CSV file path
 with open('/content/depression_dataset_reddit_cleaned.csv', 'r') as file:
     reader = csv.reader(file)
+    c = 0
     for row in reader:
         sentence = row[0].strip()
         
@@ -57,6 +58,9 @@ with open('/content/depression_dataset_reddit_cleaned.csv', 'r') as file:
                 unigram_counts[unigram] += 1  # Count the occurrence of each unigram
                 unigram_embedding = get_unigram_embedding_in_context(sentence, unigram)
                 unigram_embeddings[unigram].append(unigram_embedding)
+        c+=1
+        if c == 1000:
+            break
 
 
 # Display total number of unique unigrams and their individual counts
