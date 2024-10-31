@@ -4,6 +4,7 @@
 #SBATCH --ntasks=64
 #SBATCH --time=24:00:00
 #SBATCH --partition=ami100
+#SBATCH --gres=gpu:1
 #SBATCH --output=unigrams_adj-%j.out
 #SBATCH --mail-type="ALL"
 #SBATCH --mail-user="asum8093@colorado.edu"
